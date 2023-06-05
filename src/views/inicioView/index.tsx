@@ -5,22 +5,41 @@ import InfoSeguranca from '../../components/infoSeguranca';
 import MenuSuperior from '../../components/menuSuperior';
 import Rodape from '../../components/rodape';
 import TituloPadrao from '../../components/tituloPadrao';
+import { TCardHome } from '../../types/TCardHome';
 import * as St from './styles';
 
 export default () => {
-  const listCards = [
+  const listCards: TCardHome[] = [
     {
       title: 'Excelente localização e estrutura. Tivemos uma ótima estadia.',
       stars: 5,
+      assessments: [
+        {
+          name: 'Gilberto',
+          description: 'Muito bom',
+        },
+      ],
     },
     {
       title: 'Recomendo visitar é um lugar lindo.',
       stars: 3,
+      assessments: [
+        {
+          name: 'Gilberto',
+          description: 'Muito bom',
+        },
+      ],
     },
     {
       title:
         'Lugar incrível, se você nunca veio ao Rio de Janeiro é parada obrigatória. A melhor maneira de ir ao Cristo Redentor é pelo trem porque permite uma vista linda.',
       stars: 5,
+      assessments: [
+        {
+          name: 'Gilberto',
+          description: 'Muito bom',
+        },
+      ],
     },
   ];
 
@@ -39,7 +58,7 @@ export default () => {
       </St.Row>
       <St.Cards>
         {listCards.map((card) => (
-          <CardHome stars={card.stars} title={card.title} />
+          <CardHome stars={card.stars} title={card.title} assessments={card.assessments} />
         ))}
       </St.Cards>
       <St.Risco />
