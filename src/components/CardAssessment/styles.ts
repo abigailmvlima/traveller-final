@@ -1,13 +1,22 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 10px 0;
 `;
 
 export const Contents = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const BaseText = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 `;
 
 export const Row = styled.div`
@@ -18,8 +27,6 @@ export const Row = styled.div`
 export const Icon = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  background-color: antiquewhite;
   margin: 1px;
 `;
 

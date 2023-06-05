@@ -8,40 +8,10 @@ import TituloPadrao from '../../components/tituloPadrao';
 import { TCardHome } from '../../types/TCardHome';
 import * as St from './styles';
 
+import cardsHome from '../../mocks/cardsHome.json';
+
 export default () => {
-  const listCards: TCardHome[] = [
-    {
-      title: 'Excelente localização e estrutura. Tivemos uma ótima estadia.',
-      stars: 5,
-      assessments: [
-        {
-          name: 'Gilberto',
-          description: 'Muito bom',
-        },
-      ],
-    },
-    {
-      title: 'Recomendo visitar é um lugar lindo.',
-      stars: 3,
-      assessments: [
-        {
-          name: 'Gilberto',
-          description: 'Muito bom',
-        },
-      ],
-    },
-    {
-      title:
-        'Lugar incrível, se você nunca veio ao Rio de Janeiro é parada obrigatória. A melhor maneira de ir ao Cristo Redentor é pelo trem porque permite uma vista linda.',
-      stars: 5,
-      assessments: [
-        {
-          name: 'Gilberto',
-          description: 'Muito bom',
-        },
-      ],
-    },
-  ];
+  const listCards: TCardHome[] = cardsHome;
 
   return (
     <ControlePagina>
@@ -49,7 +19,6 @@ export default () => {
       <St.FiltroPesquisaCarousel>
         <FiltroPesquisaCarousel />
       </St.FiltroPesquisaCarousel>
-      <St.Risco />
       <St.Row>
         <TituloPadrao
           title={'O que os hóspedes estão falando sobre as acomodações'}
@@ -61,7 +30,6 @@ export default () => {
           <CardHome stars={card.stars} title={card.title} assessments={card.assessments} />
         ))}
       </St.Cards>
-      <St.Risco />
       <InfoSeguranca />
       <Rodape />
     </ControlePagina>

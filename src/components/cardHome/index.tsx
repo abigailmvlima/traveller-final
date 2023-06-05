@@ -28,8 +28,10 @@ const CardHome = ({ title, stars, assessments }: propState) => {
       <St.Image>
         <Imge src={SVG.blueMorumbiSVG} alt={''} />
       </St.Image>
-      <St.Stars>{loadStar()}</St.Stars>
-      <St.Title>{title}</St.Title>
+      <St.BaseText>
+        <St.Stars>{loadStar()}</St.Stars>
+        <St.Title>{title}</St.Title>
+      </St.BaseText>
       <St.Assessments>
         {assessments.map((assessment: TAssessment) => (
           <CardAssessment data={assessment} />

@@ -1,3 +1,4 @@
+import { EImageType } from '../../enums/EImage';
 import * as St from './styles';
 
 interface ImgeProps {
@@ -5,14 +6,13 @@ interface ImgeProps {
   alt: string;
   width?: number | string;
   height?: number | string;
+  type?: EImageType;
 }
 
-const Imge = ({ src, width, height }: ImgeProps) => {
-  return (
-    <St.Container>
-      <img src={src} alt={''} width={width} height={height} />
-    </St.Container>
-  );
-};
+const Imge = ({ src, width, height, type }: ImgeProps) => (
+  <St.Container type={type || EImageType.default}>
+    <St.Imgs src={src} alt={''} width={width} height={height} type={type || EImageType.default} />
+  </St.Container>
+);
 
 export default Imge;

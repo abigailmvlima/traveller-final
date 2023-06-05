@@ -1,14 +1,18 @@
-{"data":[ {
-  "SocialName": "Jatiúca Hotel & Resort",
-  "centerDistance":4.26,
-  "description":"O Jatiúca Hotel & Resort possui 62 mil m² e está localizado em Maceió, a 25 minutos de carro do Aeroporto Internacional Zumbi dos Palmares e em frente à praia. Oferece jardim e piscina adulto e infantil.",
-  "price":886.00,
-  "accessories":["wi-fi","pool","park","air conditioning","gym"]
-},
 {
-    "SocialName": "Hotel Ponta Verde Maceió",
-    "centerDistance":4.19,
-    "description":"Situado em Maceió, à beira-mar, em frente à Praia de Ponta Verde, o Hotel Ponta Verde Maceió oferece piscina adulto e infantil com área de lazer, bem como Wi-Fi gratuito e recepção 24h.",
-    "price":443.00,
-    "accessories":["wi-fi","pool","gym"]
-  }]}
+  "data": [
+    {
+      "SocialName": "Jatiúca Hotel & Resort",
+      "centerDistance": 4.26,
+      "description": "O Jatiúca Hotel & Resort possui 62 mil m² e está localizado em Maceió, a 25 minutos de carro do Aeroporto Internacional Zumbi dos Palmares e em frente à praia. Oferece jardim e piscina adulto e infantil.",
+      "price": 886.0,
+      "accessories": ["wi-fi", "pool", "park", "air conditioning", "gym"]
+    },
+    {
+      "SocialName": "Hotel Ponta Verde Maceió",
+      "centerDistance": 4.19,
+      "description": "Situado em Maceió, à beira-mar, em frente à Praia de Ponta Verde, o Hotel Ponta Verde Maceió oferece piscina adulto e infantil com área de lazer, bem como Wi-Fi gratuito e recepção 24h.",
+      "price": 443.0,
+      "accessories": ["wi-fi", "pool", "gym"]
+    }
+  ]
+}

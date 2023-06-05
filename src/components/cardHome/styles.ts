@@ -23,6 +23,12 @@ export const Image = styled.div`
   align-items: center;
 `;
 
+export const BaseText = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+`;
+
 export const Assessments = styled.div`
   display: flex;
 `;

@@ -15,12 +15,17 @@ export const Risco = styled.div`
 
 export const FiltroPesquisaCarousel = styled.div`
   display: flex;
-  background-color: azure;
   flex-direction: column;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 50px;
+  margin-bottom: 10px;
 `;
 
 export const Cards = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e3e3e3;
 `;

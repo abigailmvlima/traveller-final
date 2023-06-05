@@ -14,7 +14,6 @@ export const Contents = styled.div`
   width: 70%;
   max-width: 1700px;
   width: 1700px;
-  border: 1px solid #000;
   background-color: #ffffff;
   padding: 0 40px;
 `;
