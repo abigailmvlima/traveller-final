@@ -1,7 +1,9 @@
 import CardHome from '../../components/cardHome';
 import ControlePagina from '../../components/controlePagina';
 import FiltroPesquisaCarousel from '../../components/filtroPesquisaCarousel';
+import InfoSeguranca from '../../components/infoSeguranca';
 import MenuSuperior from '../../components/menuSuperior';
+import Rodape from '../../components/rodape';
 import TituloPadrao from '../../components/tituloPadrao';
 import * as St from './styles';
 
@@ -41,10 +43,8 @@ export default () => {
         ))}
       </St.Cards>
       <St.Risco />
-      <St.Row>
-        <TituloPadrao title={'Reserve no Traveller e viaje com tranquilidade'} />
-      </St.Row>
-      <St.Row>teste</St.Row>
+      <InfoSeguranca />
+      <Rodape />
     </ControlePagina>
   );
 };

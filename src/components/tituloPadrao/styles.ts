@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -7,17 +7,17 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   display: flex;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 29px;
   line-height: 39px;
   color: #000000;
 `;
 
 export const subTitle = styled.div`
   display: flex;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
