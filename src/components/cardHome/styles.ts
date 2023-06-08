@@ -3,7 +3,8 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 32%;
+  margin-right: 15px;
 `;
 
 export const Title = styled.div`
@@ -17,10 +18,20 @@ export const Title = styled.div`
   margin-left: 5px;
 `;
 
-export const Image = styled.div`
+interface ImageProps {
+  src: string;
+}
+export const Image = styled.div<ImageProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 95%;
+  height: 300px;
+  background-image: url(${(p) => p.src});
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
 `;
 
 export const BaseText = styled.div`

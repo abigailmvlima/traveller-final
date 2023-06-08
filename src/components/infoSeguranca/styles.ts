@@ -19,13 +19,12 @@ export const Icon = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: antiquewhite;
   margin: 1px;
 `;
 
 export const Image = styled.div`
   display: flex;
-  height: 100px;
+  height: 90px;
   margin-left: 10px;
 `;
 
@@ -40,7 +39,7 @@ export const Title = styled.div`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 22px;
   color: #9c0ccf;
 `;

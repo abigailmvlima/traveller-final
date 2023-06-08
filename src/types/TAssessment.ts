@@ -1,5 +1,5 @@
 export type TAssessment = {
   name: string;
-  foto: string;
+  photo: string;
   description: string;
 };

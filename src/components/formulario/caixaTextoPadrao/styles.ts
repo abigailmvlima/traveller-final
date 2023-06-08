@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -16,23 +16,32 @@ export const Base = styled.div`
 
 export const Label = styled.div`
   display: flex;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
-  letter-spacing: 0.05em;
-  color: #000000;
+  letter-spacing: 2px;
+  color: #620185;
+  text-transform: uppercase;
 `;
 
 export const Input = styled.input`
   display: flex;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  color: #d9d9d9;
+  color: #000;
   border: none;
   outline: none;
+  letter-spacing: 1px;
+  padding: 5px;
+
+  ::placeholder {
+    color: #838383;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
 `;

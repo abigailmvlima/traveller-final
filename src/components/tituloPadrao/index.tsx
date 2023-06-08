@@ -1,13 +1,14 @@
-import * as St from "./styles";
+import * as St from './styles';
 
 type propState = {
   title?: string;
   subTitle?: string;
+  stripe?: boolean;
 };
 
-const TituloPadrao = ({ title, subTitle }: propState) => {
+const TituloPadrao = ({ title, subTitle, stripe }: propState) => {
   return (
-    <St.Container>
+    <St.Container stripe={stripe}>
       <St.Title>{title}</St.Title>
       <St.subTitle>{subTitle}</St.subTitle>
     </St.Container>

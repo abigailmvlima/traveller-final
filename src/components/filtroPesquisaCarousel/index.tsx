@@ -7,6 +7,7 @@ import CaixaTextoPadrao from '../formulario/caixaTextoPadrao';
 
 import * as St from './styles';
 import Imge from '../imge';
+import { useHistory } from 'react-router';
 
 type propState = {};
 
@@ -16,7 +17,9 @@ const enum EMenuActive {
 }
 
 const FiltroPesquisaCarousel = ({}: propState) => {
+  const history = useHistory();
   const [menuActive, setMenuActive] = useState<EMenuActive>(EMenuActive.hoteis);
+
   return (
     <St.Container>
       <St.Base>
@@ -73,7 +76,12 @@ const FiltroPesquisaCarousel = ({}: propState) => {
             </St.Row>
           </St.Pagina>
           <St.Botao>
-            <BotaoPadrao label={'Buscar'} />
+            <BotaoPadrao
+              label={'Buscar'}
+              onClick={() => {
+                history.push('/pesquisa');
+              }}
+            />
           </St.Botao>
         </St.BaseFiltro>
       </St.Base>

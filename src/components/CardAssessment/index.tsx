@@ -11,7 +11,7 @@ const CardAssessment = ({ data }: propState) => {
   return (
     <St.Container>
       <St.Icon>
-        <Imge src={data.foto} alt={''} width={50} height={50} type={EImageType.circle} />
+        <Imge src={data.photo} alt={''} width={50} height={50} type={EImageType.circle} />
       </St.Icon>
       <St.BaseText>
         <St.Name>{data.name}</St.Name>

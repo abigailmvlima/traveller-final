@@ -3,6 +3,7 @@ import { EImageType } from '../../enums/EImage';
 
 interface IContainer {
   type: EImageType;
+  onClick?: Function;
 }
 
 export const Container = styled.div<IContainer>`
@@ -12,6 +13,8 @@ export const Container = styled.div<IContainer>`
   align-items: center;
   ${(p) => p.type == EImageType.circle && 'border-radius: 30px;'}
 `;
+
+export const Contents = styled.div``;
 
 export const Imgs = styled.img<IContainer>`
   ${(p) => p.type == EImageType.circle && 'border-radius: 30px;'}

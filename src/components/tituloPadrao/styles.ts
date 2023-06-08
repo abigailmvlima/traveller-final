@@ -1,8 +1,15 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface IContainerStyle {
+  stripe?: boolean;
+}
+
+export const Container = styled.div<IContainerStyle>`
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  ${(p) => p.stripe && `border-bottom: 1px solid rgba(177, 177, 177, 0.5);`}
 `;
 
 export const Title = styled.div`
@@ -11,7 +18,6 @@ export const Title = styled.div`
   font-style: normal;
   font-weight: 700;
   font-size: 29px;
-  line-height: 39px;
   color: #000000;
 `;
 
@@ -21,7 +27,6 @@ export const subTitle = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 18px;
 
   color: #000000;
   margin-top: 5px;

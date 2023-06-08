@@ -5,13 +5,13 @@ import InfoSeguranca from '../../components/infoSeguranca';
 import MenuSuperior from '../../components/menuSuperior';
 import Rodape from '../../components/rodape';
 import TituloPadrao from '../../components/tituloPadrao';
-import { TCardHome } from '../../types/TCardHome';
 import * as St from './styles';
 
-import cardsHome from '../../mocks/cardsHome.json';
+import cardsHome from '../../mocks/cardsHome';
+import { TLocation } from '../../types/TLocation';
 
 export default () => {
-  const listCards: TCardHome[] = cardsHome;
+  const listCards: TLocation[] = cardsHome;
 
   return (
     <ControlePagina>
@@ -27,7 +27,7 @@ export default () => {
       </St.Row>
       <St.Cards>
         {listCards.map((card) => (
-          <CardHome stars={card.stars} title={card.title} assessments={card.assessments} />
+          <CardHome {...card} />
         ))}
       </St.Cards>
       <InfoSeguranca />
