@@ -26,6 +26,9 @@ import lc2f5 from './photos/lc2.f5';
 import lc2f6 from './photos/lc2.f6';
 import lc2f7 from './photos/lc2.f7';
 
+// turismo
+import lc6f1 from './photos/lc6.f1';
+
 const lc1Photos = shuffle([
   lc1f1.photo,
   lc1f2.photo,
@@ -46,6 +49,8 @@ const lc2Photos = shuffle([
   lc2f6.photo,
   lc2f7.photo,
 ]);
+
+const lc6Photos = shuffle([lc6f1.photo]);
 
 function shuffle(array: string[]) {
   let currentIndex = array.length;
@@ -146,6 +151,33 @@ const data = [
     ],
     photo: '',
     photos: [],
+  },
+  {
+    id: 'T01',
+    bookNow: false,
+    title: 'Cristo Redentor.',
+    stars: 5,
+    distance: 'A 4,26 km do centro',
+    pricePerNight: 886.0,
+    summary:
+      'O Jatiúca Hotel & Resort possui 62 mil m² e está localizado em Maceió, a 25 minutos de carro do Aeroporto Internacional Zumbi dos Palmares e em frente à praia. Oferece jardim e piscina adulto e infantil.',
+    text: 'O Jatiúca Hotel & Resort possui 62 mil m² e está localizado em Maceió, a 25 minutos de carro do Aeroporto Internacional Zumbi dos Palmares e em frente à praia. Oferece jardim e piscina adulto e infantil. <br> Você precisa saber: <br> • O hotel possui quadra de tênis, sala de jogos e serviço de massagem, por um custo extra. O café da manhã é servido diariamente com pães, frutas e bolos, além de café, leite e sucos. O Jatiúca Hotel & Resort também dispõe de 2 restaurantes, sendo que um deles possui vista ao mar. <br><br><b>Conheça os pontos de interesse mais próximos</b><br> • A 3 km do parque comercial de Maceió. <br> • A 5 minutos de carro da placa I Love Maceió. <br>  • A 6 km da catedral metropolitana. <br> O hotel conta com quadra de tênis, sala de jogos e serviço de massagem, por um custo extra.',
+    convenience: {
+      wifi: true,
+      pool: true,
+      parking: false,
+      airConditioning: true,
+      academy: false,
+    },
+    assessments: [
+      {
+        name: 'Gilberto',
+        description: 'Muito bom.',
+        photo: pp1.photo,
+      },
+    ],
+    photo: lc6f1.photo,
+    photos: lc6Photos,
   },
 ];
 
