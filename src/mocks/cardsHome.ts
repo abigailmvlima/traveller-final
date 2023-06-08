@@ -1,23 +1,30 @@
+/* 
+  lc1 
+    Ibis Anhembi
+
+
+*/
+
 import pp1 from './photosPeople/f1';
 
-import fh1 from './photos/fh1';
-import fh2 from './photos/fh2';
-import fh3 from './photos/fh3';
-import fh4 from './photos/fh4';
-import fh5 from './photos/fh5';
-import fh6 from './photos/fh6';
-import fh7 from './photos/fh7';
-import fh8 from './photos/fh8';
+import lc1f1 from './photos/lc1.f1';
+import lc1f2 from './photos/lc1.f2';
+import lc1f3 from './photos/lc1.f3';
+import lc1f4 from './photos/lc1.f4';
+import lc1f5 from './photos/lc1.f5';
+import lc1f6 from './photos/lc1.f6';
+import lc1f7 from './photos/lc1.f7';
+import lc1f8 from './photos/lc1.f8';
 
-const listPhoto = shuffle([
-  fh1.photo,
-  fh2.photo,
-  fh3.photo,
-  fh4.photo,
-  fh5.photo,
-  fh6.photo,
-  fh7.photo,
-  fh8.photo,
+const lc1Photos = shuffle([
+  lc1f1.photo,
+  lc1f2.photo,
+  lc1f3.photo,
+  lc1f4.photo,
+  lc1f5.photo,
+  lc1f6.photo,
+  lc1f7.photo,
+  lc1f8.photo,
 ]);
 
 function shuffle(array: string[]) {
@@ -39,7 +46,7 @@ function shuffle(array: string[]) {
 const data = [
   {
     id: 'D00001',
-    title: 'Excelente localização e estrutura. Tivemos uma ótima estadia.',
+    title: 'IBIS Styles São Paulo Anhembi.',
     stars: 5,
     distance: 'A 4,26 km do centro',
     pricePerNight: 886.0,
@@ -60,8 +67,8 @@ const data = [
         photo: pp1.photo,
       },
     ],
-    photo: fh1.photo,
-    photos: listPhoto,
+    photo: lc1f1.photo,
+    photos: lc1Photos,
   },
 
   {
