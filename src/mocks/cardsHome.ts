@@ -1,4 +1,8 @@
 /* 
+
+  type: 1 = hotel
+  type: 2 = lugares
+
   lc1 
     Ibis Anhembi
   lc2
@@ -66,6 +70,7 @@ function shuffle(array: string[]) {
 const data = [
   {
     id: 'H01',
+    type: 1,
     bookNow: true,
     title: 'IBIS Styles São Paulo Anhembi.',
     stars: 5,
