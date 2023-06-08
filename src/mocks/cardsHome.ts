@@ -27,6 +27,15 @@ import lc2f6 from './photos/lc2.f6';
 import lc2f7 from './photos/lc2.f7';
 import lc2f8 from './photos/lc2.f8';
 
+import lc3f1 from './photos/lc3.f1';
+import lc3f2 from './photos/lc3.f2';
+import lc3f3 from './photos/lc3.f3';
+import lc3f4 from './photos/lc3.f4';
+import lc3f5 from './photos/lc3.f5';
+import lc3f6 from './photos/lc3.f6';
+import lc3f7 from './photos/lc3.f7';
+import lc3f8 from './photos/lc3.f8';
+
 // turismo
 import lc6f1 from './photos/lc6.f1';
 
@@ -50,6 +59,17 @@ const lc2Photos = shuffle([
   lc2f6.photo,
   lc2f7.photo,
   lc2f8.photo,
+]);
+
+const lc3Photos = shuffle([
+  lc3f1.photo,
+  lc3f2.photo,
+  lc3f3.photo,
+  lc3f4.photo,
+  lc3f5.photo,
+  lc3f6.photo,
+  lc3f7.photo,
+  lc3f8.photo,
 ]);
 
 const lc6Photos = shuffle([lc6f1.photo]);
@@ -132,11 +152,11 @@ const data = [
     bookNow: true,
     title: 'Excelente localização e estrutura. Tivemos uma ótima estadia.',
     stars: 5,
-    distance: 'A 4,26 km do centro',
+    distance: 'A 15 minutos de carro do Transamérica Expo',
     pricePerNight: 886.0,
     summary:
-      'O Jatiúca Hotel & Resort possui 62 mil m² e está localizado em Maceió, a 25 minutos de carro do Aeroporto Internacional Zumbi dos Palmares e em frente à praia. Oferece jardim e piscina adulto e infantil.',
-    text: 'O Jatiúca Hotel & Resort possui 62 mil m² e está localizado em Maceió, a 25 minutos de carro do Aeroporto Internacional Zumbi dos Palmares e em frente à praia. Oferece jardim e piscina adulto e infantil. <br> Você precisa saber: <br> • O hotel possui quadra de tênis, sala de jogos e serviço de massagem, por um custo extra. O café da manhã é servido diariamente com pães, frutas e bolos, além de café, leite e sucos. O Jatiúca Hotel & Resort também dispõe de 2 restaurantes, sendo que um deles possui vista ao mar. <br><br><b>Conheça os pontos de interesse mais próximos</b><br> • A 3 km do parque comercial de Maceió. <br> • A 5 minutos de carro da placa I Love Maceió. <br>  • A 6 km da catedral metropolitana. <br> O hotel conta com quadra de tênis, sala de jogos e serviço de massagem, por um custo extra.',
+      'Com Wi-Fi grátis e uma localização privilegiada em frente ao Morumbi Shopping, o Blue Tree Premium Morumbi oferece academia, sauna, piscina coberta com deck e piscina ao ar livre com uma área para tomar sol de 20 metros.',
+    text: 'Todos os quartos do Morumbi Blue Tree Premium dispõem de ar-condicionado, cofre, TV a cabo, telefone, frigobar, mesa de trabalho e janelas com isolamento acústico. Além disso, um serviço de quarto está disponível 24 horas. <br>O Noah Jonnie Space, o restaurante do hotel, serve diversas especialidades incluindo refeições leves e típicas de várias regiões. Um café da manhã delicioso também é servido diariamente.<br>O Blue Tree Premium Morumbi fica a 15 minutos de carro do Transamérica Expo Center e a 30 minutos de carro do São Paulo Expo. O Consulado dos EUA fica a 1,4 km.',
     convenience: {
       wifi: true,
       pool: true,
@@ -151,8 +171,8 @@ const data = [
         photo: '',
       },
     ],
-    photo: '',
-    photos: [],
+    photo: lc3f1.photo,
+    photos: lc3Photos,
   },
   {
     id: 'T01',
@@ -162,8 +182,8 @@ const data = [
     distance: 'A 4,26 km do centro',
     pricePerNight: 886.0,
     summary:
-      'O Jatiúca Hotel & Resort possui 62 mil m² e está localizado em Maceió, a 25 minutos de carro do Aeroporto Internacional Zumbi dos Palmares e em frente à praia. Oferece jardim e piscina adulto e infantil.',
-    text: 'O Jatiúca Hotel & Resort possui 62 mil m² e está localizado em Maceió, a 25 minutos de carro do Aeroporto Internacional Zumbi dos Palmares e em frente à praia. Oferece jardim e piscina adulto e infantil. <br> Você precisa saber: <br> • O hotel possui quadra de tênis, sala de jogos e serviço de massagem, por um custo extra. O café da manhã é servido diariamente com pães, frutas e bolos, além de café, leite e sucos. O Jatiúca Hotel & Resort também dispõe de 2 restaurantes, sendo que um deles possui vista ao mar. <br><br><b>Conheça os pontos de interesse mais próximos</b><br> • A 3 km do parque comercial de Maceió. <br> • A 5 minutos de carro da placa I Love Maceió. <br>  • A 6 km da catedral metropolitana. <br> O hotel conta com quadra de tênis, sala de jogos e serviço de massagem, por um custo extra.',
+      'Com Wi-Fi grátis e uma localização privilegiada em frente ao Morumbi Shopping, o Blue Tree Premium Morumbi oferece academia, sauna, piscina coberta com deck e piscina ao ar livre com uma área para tomar sol de 20 metros.',
+    text: 'Todos os quartos do Morumbi Blue Tree Premium dispõem de ar-condicionado, cofre, TV a cabo, telefone, frigobar, mesa de trabalho e janelas com isolamento acústico. Além disso, um serviço de quarto está disponível 24 horas. <br>O Noah Jonnie Space, o restaurante do hotel, serve diversas especialidades incluindo refeições leves e típicas de várias regiões. Um café da manhã delicioso também é servido diariamente.<br>O Blue Tree Premium Morumbi fica a 15 minutos de carro do Transamérica Expo Center e a 30 minutos de carro do São Paulo Expo. O Consulado dos EUA fica a 1,4 km.',
     convenience: {
       wifi: true,
       pool: true,
