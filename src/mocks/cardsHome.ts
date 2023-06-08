@@ -104,6 +104,7 @@ const data = [
 
   {
     id: 'H02',
+    type: 1,
     bookNow: true,
     title: 'Confort Ibirapuera',
     stars: 5,
@@ -132,6 +133,7 @@ const data = [
 
   {
     id: 'D00001',
+    type: 1,
     bookNow: true,
     title: 'Excelente localização e estrutura. Tivemos uma ótima estadia.',
     stars: 5,
@@ -159,6 +161,7 @@ const data = [
   },
   {
     id: 'T01',
+    type: 2,
     bookNow: false,
     title: 'Cristo Redentor.',
     stars: 5,

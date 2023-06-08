@@ -12,11 +12,13 @@ import { useState } from 'react';
 import CaixaNumeroPadrao from '../formulario/caixaNumeroPadrao';
 import BotaoSearch from '../formulario/botaoSearch';
 import { useHistory } from 'react-router';
+import { EType } from '../../enum/EType';
 
 type propState = {
   redirectRoute?: boolean;
+  type: EType;
 };
-const FiltroPesquisa = ({ redirectRoute }: propState) => {
+const FiltroPesquisa = ({ redirectRoute, type }: propState) => {
   const history = useHistory();
   const dispatch = useDispatch();
 
@@ -95,6 +97,7 @@ const FiltroPesquisa = ({ redirectRoute }: propState) => {
               onClick={() => {
                 dispatch(
                   actions.search.execute({
+                    type: type,
                     location,
                     dateEntry,
                     dateDeparture,

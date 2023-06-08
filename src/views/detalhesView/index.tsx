@@ -14,6 +14,7 @@ import { useHistory } from 'react-router';
 import { TNavigateState } from '../../redux/modules/navigate/types';
 import { TLocation } from '../../types/TLocation';
 import BotaoPadrao from '../../components/formulario/botaoPadrao';
+import { EType } from '../../enum/EType';
 
 export default () => {
   const history = useHistory();
@@ -47,7 +48,7 @@ export default () => {
     <ControlePagina>
       <St.FlexGrow>
         <MenuSuperior items={[{ label: 'Ajuda' }, { label: 'Cadastre-se' }, { label: 'Entrar' }]} />
-        <FiltroPesquisa redirectRoute={true} />
+        <FiltroPesquisa redirectRoute={true} type={item?.type || EType.hoteis} />
         <St.Row>
           <Breadcrumbs
             data={[
