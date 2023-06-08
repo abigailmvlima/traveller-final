@@ -11,7 +11,11 @@ export const Container = styled.div`
   cursor: pointer;
 `;
 
-export const Title = styled.div`
+interface ITitleStyle {
+  size?: number;
+}
+
+export const Title = styled.div<ITitleStyle>`
   display: flex;
   font-family: 'Montserrat';
   font-style: normal;
@@ -19,8 +23,9 @@ export const Title = styled.div`
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 1.5px;
 
   color: #ffffff;
   padding: 0.6em;
+  ${({ size }) => size && `font-size: ${size}px;`}
 `;

@@ -66,6 +66,7 @@ function shuffle(array: string[]) {
 const data = [
   {
     id: 'H01',
+    bookNow: true,
     title: 'IBIS Styles São Paulo Anhembi.',
     stars: 5,
     distance: 'A 4,26 km do centro',
@@ -93,6 +94,7 @@ const data = [
 
   {
     id: 'H02',
+    bookNow: true,
     title: 'Confort Ibirapuera',
     stars: 5,
     distance: 'A 4,26 km do centro',
@@ -120,6 +122,7 @@ const data = [
 
   {
     id: 'D00001',
+    bookNow: true,
     title: 'Excelente localização e estrutura. Tivemos uma ótima estadia.',
     stars: 5,
     distance: 'A 4,26 km do centro',
