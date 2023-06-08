@@ -1,7 +1,9 @@
+import { EType } from '../enum/EType';
 import { TAssessment } from './TAssessment';
 
 export type TLocation = {
   id: string;
+  type: EType;
   bookNow: boolean;
   title: string;
   stars?: number;

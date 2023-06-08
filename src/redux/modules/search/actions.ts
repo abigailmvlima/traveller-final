@@ -15,7 +15,7 @@ export const success = (response: TSearchResponse) => {
   };
 };
 
-export const error = (response: TSearchResponse) => {
+export const error = (response?: TSearchResponse) => {
   return {
     type: types.error,
     response: response,

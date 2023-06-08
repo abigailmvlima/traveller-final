@@ -1,4 +1,5 @@
 import { TLocation } from '../../../types/TLocation';
+import { TSearchRequest } from '../../../types/TSearch';
 
 export const name = 'SEARCH';
 const states = {
@@ -17,9 +18,7 @@ const states = {
 
 export type TSearchStateActions = {
   type: string;
-  request?: {
-    data?: TLocation[];
-  };
+  request?: TSearchRequest;
   response?: {
     data?: TLocation[];
   };

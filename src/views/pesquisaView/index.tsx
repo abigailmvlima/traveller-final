@@ -16,11 +16,15 @@ import Breadcrumbs from '../../components/breadcrumbs';
 import { useHistory } from 'react-router';
 import { TLocation } from '../../types/TLocation';
 import { TSearchState } from '../../redux/modules/search/types';
+import { TNavigateState } from '../../redux/modules/navigate/types';
+import { EType } from '../../enum/EType';
 
 export default () => {
   const history = useHistory();
   const searchState: TSearchState = useSelector((s: RootState) => s.search);
+  const navigateState: TNavigateState = useSelector((s: RootState) => s.navigate);
   const [listCards, setListCards] = useState<TLocation[]>([]);
+  const [type, setType] = useState<EType>();
 
   useEffect(() => {
     if (searchState.loading) return;
@@ -28,11 +32,17 @@ export default () => {
     setListCards(searchState.response?.data || []);
   }, [searchState]);
 
+  useEffect(() => {
+    if (!navigateState?.data) return;
+    const data: any = navigateState?.data;
+    setType(data?.type || 1);
+  }, [navigateState]);
+
   return (
     <ControlePagina>
       <St.FlexGrow>
         <MenuSuperior items={[{ label: 'Ajuda' }, { label: 'Cadastre-se' }, { label: 'Entrar' }]} />
-        <FiltroPesquisa />
+        <FiltroPesquisa type={type || EType.hoteis} />
         <St.Row>
           <Breadcrumbs
             data={[

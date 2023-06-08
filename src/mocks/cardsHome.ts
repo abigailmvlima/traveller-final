@@ -1,4 +1,8 @@
 /* 
+
+  type: 1 = hotel
+  type: 2 = lugares
+
   lc1 
     Ibis Anhembi
   lc2
@@ -93,6 +97,7 @@ function shuffle(array: string[]) {
 const data = [
   {
     id: 'H01',
+    type: 1,
     bookNow: true,
     title: 'IBIS Styles São Paulo Anhembi.',
     stars: 5,
@@ -121,6 +126,7 @@ const data = [
 
   {
     id: 'H02',
+    type: 1,
     bookNow: true,
     title: 'Comfort Ibirapuera',
     stars: 5,
@@ -149,6 +155,7 @@ const data = [
 
   {
     id: 'H03',
+    type: 1,
     bookNow: true,
     title: 'Excelente localização e estrutura. Tivemos uma ótima estadia.',
     stars: 5,
@@ -176,6 +183,7 @@ const data = [
   },
   {
     id: 'T01',
+    type: 2,
     bookNow: false,
     title: 'Catavento Cultural',
     stars: 5,
