@@ -20,6 +20,11 @@ import lc1f8 from './photos/lc1.f8';
 
 import lc2f1 from './photos/lc2.f1';
 import lc2f2 from './photos/lc2.f2';
+import lc2f3 from './photos/lc2.f3';
+import lc2f4 from './photos/lc2.f4';
+import lc2f5 from './photos/lc2.f5';
+import lc2f6 from './photos/lc2.f6';
+import lc2f7 from './photos/lc2.f7';
 
 const lc1Photos = shuffle([
   lc1f1.photo,
@@ -32,7 +37,15 @@ const lc1Photos = shuffle([
   lc1f8.photo,
 ]);
 
-const lc2Photos = shuffle([lc2f1.photo, lc2f2.photo]);
+const lc2Photos = shuffle([
+  lc2f1.photo,
+  lc2f2.photo,
+  lc2f3.photo,
+  lc2f4.photo,
+  lc2f5.photo,
+  lc2f6.photo,
+  lc2f7.photo,
+]);
 
 function shuffle(array: string[]) {
   let currentIndex = array.length;
