@@ -12,7 +12,9 @@ const CardPesquisa = (props: propState) => {
   console.log(11111, props);
   return (
     <St.Container>
-      <St.Foto src={photo || ''} />
+      <St.PhotoBase>
+        <St.Foto src={photo || ''} />
+      </St.PhotoBase>
       <St.BaseText>
         <St.Title>{title}</St.Title>
         <St.Distance>{distance}</St.Distance>

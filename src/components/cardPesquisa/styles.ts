@@ -21,6 +21,7 @@ export const Title = styled.div`
 
 export const Summary = styled.div`
   display: flex;
+  width: 900px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
@@ -30,6 +31,7 @@ export const Summary = styled.div`
   color: #000000;
   margin: 10px 0;
   text-align: justify;
+  white-space: pre-wrap;
 `;
 export const Distance = styled.div`
   display: flex;
@@ -47,6 +49,7 @@ export const BaseText = styled.div`
   display: flex;
   flex-direction: column;
   margin: 20px 20px;
+  flex-grow: 1;
 `;
 
 export const Assessments = styled.div`
@@ -68,9 +71,14 @@ export const Icons = styled.div`
   margin: 15px 0 5px 0;
 `;
 
+export const PhotoBase = styled.div`
+  display: flex;
+`;
+
 interface FotoProps {
   src: string;
 }
+
 export const Foto = styled.div<FotoProps>`
   display: flex;
   justify-content: center;
