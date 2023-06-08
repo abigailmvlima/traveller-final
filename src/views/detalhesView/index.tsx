@@ -13,6 +13,7 @@ import Breadcrumbs from '../../components/breadcrumbs';
 import { useHistory } from 'react-router';
 import { TNavigateState } from '../../redux/modules/navigate/types';
 import { TLocation } from '../../types/TLocation';
+import BotaoPadrao from '../../components/formulario/botaoPadrao';
 
 export default () => {
   const history = useHistory();
@@ -66,7 +67,7 @@ export default () => {
         <St.Row>
           <TituloPadrao title={item?.title} stripe={true} />
         </St.Row>
-        <St.Row m={'0 0 20px 20px '}>
+        <St.Row m={'0 20px 20px 20px '}>
           <St.TextBase>
             <St.PhotoBase>
               <St.Foto src={item?.photo || ''} />
@@ -84,6 +85,19 @@ export default () => {
               item.photosRrandom.map((m) => <St.PhotoGallery src={m || ''} />)}
           </St.Gallery>
         </St.Row>
+        {item?.bookNow && (
+          <St.Butons>
+            <St.Buton>
+              <BotaoPadrao
+                size={17}
+                label={'Reservar já'}
+                onClick={() => {
+                  history.push('/pesquisa');
+                }}
+              />
+            </St.Buton>
+          </St.Butons>
+        )}
       </St.FlexGrow>
       <Rodape />
     </ControlePagina>

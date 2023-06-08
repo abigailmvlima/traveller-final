@@ -2,6 +2,7 @@ import { TAssessment } from './TAssessment';
 
 export type TLocation = {
   id: string;
+  bookNow: boolean;
   title: string;
   stars?: number;
   distance?: string;

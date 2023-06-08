@@ -123,3 +123,15 @@ export const PhotoGallery = styled.div<FotoProps>`
   margin-right: 15px;
   margin-bottom: 15px;
 `;
+
+export const Butons = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+`;
+
+export const Buton = styled.div`
+  display: flex;
+`;
