@@ -4,8 +4,8 @@ import { TAssessment } from './TAssessment';
 export type TLocation = {
   id: string;
   type: EType;
-  bookNow: boolean;
-  title: string;
+  bookNow?: boolean;
+  title?: string;
   stars?: number;
   distance?: string;
   summary?: string;
@@ -20,11 +20,11 @@ export type TLocation = {
 };
 
 export type TConvenience = {
-  wifi: boolean;
-  pool: boolean;
-  parking: boolean;
-  airConditioning: boolean;
-  academy: boolean;
+  wifi?: boolean;
+  pool?: boolean;
+  parking?: boolean;
+  airConditioning?: boolean;
+  academy?: boolean;
 };
 
 export type TLocationAttributes = {
