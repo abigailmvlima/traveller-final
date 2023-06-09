@@ -8,6 +8,15 @@
   lc2
   Confort Ibirapuera
 
+  lc3
+  Blue Tree Morumbi
+
+  lc4
+  Mercure São Paulo Pamplona
+
+  lc5
+  Sheraton São Paulo WTC Hotel
+
 
 */
 
@@ -39,6 +48,24 @@ import lc3f5 from './photos/lc3.f5';
 import lc3f6 from './photos/lc3.f6';
 import lc3f7 from './photos/lc3.f7';
 import lc3f8 from './photos/lc3.f8';
+
+import lc4f1 from './photos/lc4.f1';
+import lc4f2 from './photos/lc4.f2';
+import lc4f3 from './photos/lc4.f3';
+import lc4f4 from './photos/lc4.f4';
+import lc4f5 from './photos/lc4.f5';
+import lc4f6 from './photos/lc4.f6';
+import lc4f7 from './photos/lc4.f7';
+import lc4f8 from './photos/lc4.f8';
+
+import lc5f1 from './photos/lc5.f1';
+import lc5f2 from './photos/lc5.f2';
+import lc5f3 from './photos/lc5.f3';
+import lc5f4 from './photos/lc5.f4';
+import lc5f5 from './photos/lc5.f5';
+import lc5f6 from './photos/lc5.f6';
+import lc5f7 from './photos/lc5.f7';
+import lc5f8 from './photos/lc5.f8';
 
 // turismo
 import lc6f1 from './photos/lc6.f1';
@@ -74,6 +101,28 @@ const lc3Photos = shuffle([
   lc3f6.photo,
   lc3f7.photo,
   lc3f8.photo,
+]);
+
+const lc4Photos = shuffle([
+  lc4f1.photo,
+  lc4f2.photo,
+  lc4f3.photo,
+  lc4f4.photo,
+  lc4f5.photo,
+  lc4f6.photo,
+  lc4f7.photo,
+  lc4f8.photo,
+]);
+
+const lc5Photos = shuffle([
+  lc5f1.photo,
+  lc5f2.photo,
+  lc5f3.photo,
+  lc5f4.photo,
+  lc5f5.photo,
+  lc5f6.photo,
+  lc5f7.photo,
+  lc5f8.photo,
 ]);
 
 const lc6Photos = shuffle([lc6f1.photo]);
@@ -144,7 +193,7 @@ const data = [
     },
     assessments: [
       {
-        name: 'Gilberto',
+        name: 'Kaique',
         description: 'Muito bom.',
         photo: '',
       },
@@ -152,12 +201,11 @@ const data = [
     photo: lc2f1.photo,
     photos: lc2Photos,
   },
-
   {
     id: 'H03',
     type: 1,
     bookNow: true,
-    title: 'Excelente localização e estrutura. Tivemos uma ótima estadia.',
+    title: 'Blue Tree Premium Morumbi',
     stars: 5,
     distance: 'A 15 minutos de carro do Transamérica Expo',
     pricePerNight: 886.0,
@@ -173,13 +221,69 @@ const data = [
     },
     assessments: [
       {
-        name: 'Gilberto',
+        name: 'Rafaela',
         description: 'Muito bom.',
         photo: '',
       },
     ],
     photo: lc3f1.photo,
     photos: lc3Photos,
+  },
+  {
+    id: 'H04',
+    type: 1,
+    bookNow: true,
+    title: 'Mercure Sao Paulo Pamplona',
+    stars: 5,
+    distance: 'A 800 metros da Avenida Paulista',
+    pricePerNight: 886.0,
+    summary:
+      'Com uma localização ideal no bairro badalado de Jardins, em São Paulo, o Mercure São Paulo Pamplona fica ao lado da Avenida 9 de Julho e a 800 metros da Avenida Paulista.',
+    text: 'Este hotel 4 estrelas dispõe de acomodações espaçosas com ar-condicionado, área de estar e banheiro privativo. <br><br>Um café da manhã variado é servido diariamente no restaurante, onde você também pode desfrutar de pratos internacionais.<br><br>Você ainda pode mergulhar na piscina ao ar livre e relaxar na sauna. Além disso, você pode manter a forma e se exercitar na academia no local.<br><br>Esta é a parte de São Paulo de que os nossos hóspedes mais gostam, de acordo com avaliações independentes.',
+    convenience: {
+      wifi: true,
+      pool: true,
+      parking: false,
+      airConditioning: true,
+      academy: false,
+    },
+    assessments: [
+      {
+        name: 'Abigail',
+        description: 'Muito bom.',
+        photo: '',
+      },
+    ],
+    photo: lc4f1.photo,
+    photos: lc4Photos,
+  },
+  {
+    id: 'H05',
+    type: 1,
+    bookNow: true,
+    title: 'Sheraton São Paulo WTC Hotel',
+    stars: 5,
+    distance: 'A 5,5 km do Estádio do Morumbi.',
+    pricePerNight: 886.0,
+    summary:
+      'Localizado dentro do World Trade Center, o Sheraton São Paulo alia a arquitetura moderna à decoração de luxo. O hotel dispõe de piscina, academia e business center de última geração com salas de reuniões.',
+    text: 'Localizado dentro do World Trade Center, o Sheraton São Paulo alia a arquitetura moderna à decoração de luxo. O hotel dispõe de piscina, academia e business center de última geração com salas de reuniões.<br><br>Os quartos deste hotel da rede Sheraton possuem ar-condicionado, Wi-Fi gratuito, TV a cabo, frigobar e banheiro privativo. O serviço de quarto está disponível 24 horas.<br><br>O Sheraton São Paulo WTC Hotel conta com heliporto 24 horas para seu maior conforto.<br><br>O Sheraton WTC Hotel está situado no bairro do Brooklin, em São Paulo, ao lado do Shopping D&D e a 5,5 km do Estádio do Morumbi.',
+    convenience: {
+      wifi: true,
+      pool: true,
+      parking: false,
+      airConditioning: true,
+      academy: false,
+    },
+    assessments: [
+      {
+        name: 'Davi',
+        description: 'Muito bom.',
+        photo: '',
+      },
+    ],
+    photo: lc5f1.photo,
+    photos: lc5Photos,
   },
   {
     id: 'T01',
