@@ -26,7 +26,7 @@ export default () => {
         />
       </St.Row>
       <St.Cards>
-        {listCards.map((card) => (
+        {listCards.slice(0, 3).map((card) => (
           <CardHome {...card} />
         ))}
       </St.Cards>

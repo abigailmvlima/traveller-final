@@ -9,19 +9,31 @@ export const Container = styled.div`
 
 export const BaseFiltro = styled.div`
   display: flex;
-  position: absolute;
-  top: -300px;
-  left: 135px;
-  width: 490px;
   background: #ffffff;
   box-shadow: 0px 15px 25px 8px rgba(0, 0, 0, 0.35);
   flex-direction: column;
   border-radius: 20px;
 `;
 
+interface ImageStyle {
+  src?: string;
+}
+
+export const Image = styled.div<ImageStyle>`
+  display: flex;
+  flex-grow: 1;
+  margin-left: 40px;
+
+  width: 100%;
+  height: 750px
+  background-image: url(${(p) => p.src});
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+`;
+
 export const Base = styled.div`
   display: flex;
-  position: relative;
+  min-width: 490px;
 `;
 
 export const Menu = styled.div`

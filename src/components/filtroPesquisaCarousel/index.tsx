@@ -168,7 +168,7 @@ const FiltroPesquisaCarousel = ({}: propState) => {
           </St.Botao>
         </St.BaseFiltro>
       </St.Base>
-      <Imge src={SVG.ponteEstaiadaSVG} alt={''} />
+      <St.Image src={SVG.ponteEstaiadaSVG} />
     </St.Container>
   );
 };
