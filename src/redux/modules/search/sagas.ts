@@ -5,7 +5,7 @@ import types, { TSearchStateActions } from './types';
 
 import { success, error } from './actions';
 import { buscarDados } from '../../../services/serviceSearch';
-import { TSearchSagasRequest, TSearchResponse } from '../../../types/TSearch';
+import { TSearchResponse } from '../../../types/TSearch';
 
 function* execute(data: TSearchStateActions) {
   if (!data.request) {
@@ -15,7 +15,6 @@ function* execute(data: TSearchStateActions) {
 
   const response: TSearchResponse = yield buscarDados(data?.request);
   if (response?.err) yield put(error(response));
-  console.log('sagas', response);
   yield put(success(response));
   return;
 }

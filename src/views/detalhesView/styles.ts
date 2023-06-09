@@ -135,3 +135,56 @@ export const Butons = styled.div`
 export const Buton = styled.div`
   display: flex;
 `;
+
+export const Attributes = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const AttributesData = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  margin: 20px 20px;
+`;
+
+export const AttributesDataTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin: 20px 20px 0 20px;
+`;
+
+export const AttributesDataItem = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const AttributesDataItemDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 0 20px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #000000;
+`;
+
+export const AttributesDataItemBase = styled.div`
+  display: flex;
+  flex-direction: column;
+`;

@@ -15,6 +15,7 @@ import { TNavigateState } from '../../redux/modules/navigate/types';
 import { TLocation } from '../../types/TLocation';
 import BotaoPadrao from '../../components/formulario/botaoPadrao';
 import { EType } from '../../enum/EType';
+import { Item } from '../../components/menuSuperior/styles';
 
 export default () => {
   const history = useHistory();
@@ -76,16 +77,23 @@ export default () => {
             <St.Text dangerouslySetInnerHTML={{ __html: item?.text || '' }}></St.Text>
           </St.TextBase>
         </St.Row>
-        <St.Row>
-          <TituloPadrao title={'Fotos'} stripe={true} />
-        </St.Row>
-        <St.Row m={'0 0 0 40px '}>
-          <St.Gallery>
-            {item?.photosRrandom &&
-              Array.isArray(item?.photosRrandom) &&
-              item.photosRrandom.map((m) => <St.PhotoGallery src={m || ''} />)}
-          </St.Gallery>
-        </St.Row>
+        {item?.photosRrandom &&
+          Array.isArray(item?.photosRrandom) &&
+          item?.photosRrandom.length > 1 && (
+            <>
+              <St.Row>
+                <TituloPadrao title={'Fotos'} stripe={true} />
+              </St.Row>
+              <St.Row m={'0 0 0 40px '}>
+                <St.Gallery>
+                  {item?.photosRrandom &&
+                    Array.isArray(item?.photosRrandom) &&
+                    item?.photosRrandom.length > 1 &&
+                    item.photosRrandom.map((m) => <St.PhotoGallery src={m || ''} />)}
+                </St.Gallery>
+              </St.Row>
+            </>
+          )}
         {item?.bookNow && (
           <St.Butons>
             <St.Buton>
@@ -99,6 +107,32 @@ export default () => {
             </St.Buton>
           </St.Butons>
         )}
+
+        <St.Attributes>
+          {item?.attributes?.title && (
+            <St.Row>
+              <TituloPadrao title={item?.attributes?.title} stripe={true} />
+            </St.Row>
+          )}
+
+          {Array.isArray(item?.attributes?.data) &&
+            item?.attributes?.data.map((d) => (
+              <St.AttributesData>
+                <St.AttributesDataTitle>{d.title}</St.AttributesDataTitle>
+                <St.AttributesDataItem>
+                  {Array.isArray(d.item) &&
+                    d.item.map((it) => (
+                      <St.AttributesDataItemBase>
+                        <St.AttributesDataTitle>{it.title}</St.AttributesDataTitle>
+                        <St.AttributesDataItemDescription
+                          dangerouslySetInnerHTML={{ __html: it.description || '' }}
+                        />
+                      </St.AttributesDataItemBase>
+                    ))}
+                </St.AttributesDataItem>
+              </St.AttributesData>
+            ))}
+        </St.Attributes>
       </St.FlexGrow>
       <Rodape />
     </ControlePagina>

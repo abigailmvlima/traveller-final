@@ -11,7 +11,7 @@ import cardsHome from '../../mocks/cardsHome';
 import { TLocation } from '../../types/TLocation';
 
 export default () => {
-  const listCards: TLocation[] = cardsHome;
+  const listCards: TLocation[] = cardsHome();
 
   return (
     <ControlePagina>

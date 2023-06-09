@@ -1,4 +1,4 @@
-import mock from '../mocks/cardsHome';
+import cardsHome from '../mocks/cardsHome';
 import { TSearchRequest, TSearchResponse } from '../types/TSearch';
 
 export const buscarDados = async (request: TSearchRequest): Promise<TSearchResponse> => {
@@ -7,7 +7,7 @@ export const buscarDados = async (request: TSearchRequest): Promise<TSearchRespo
   if (mockBool == true)
     return {
       err: false,
-      data: mock.filter((f) => f.type == request.type),
+      data: cardsHome().filter((f) => f.type == request.type),
     };
 
   return {
