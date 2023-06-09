@@ -69,6 +69,7 @@ import lc5f8 from './photos/lc5.f8';
 
 // turismo
 import lc6f1 from './photos/lc6.f1';
+import lc7f1 from './photos/lc7.f1';
 
 export default () => {
   const lc1Photos = shuffle([
@@ -127,6 +128,8 @@ export default () => {
   ]);
 
   const lc6Photos = shuffle([lc6f1.photo]);
+
+  const lc7Photos = shuffle([lc7f1.photo]);
 
   function shuffle(array: string[]) {
     let currentIndex = array.length;
@@ -194,7 +197,7 @@ export default () => {
       },
       assessments: [
         {
-          name: 'Gilberto',
+          name: 'Kaique',
           description: 'Muito bom.',
           photo: pp1.photo,
         },
@@ -287,35 +290,6 @@ export default () => {
       photo: lc5Photos[2],
       photos: lc5Photos,
     },
-
-    {
-      id: 'H03',
-      type: 1,
-      bookNow: true,
-      title: 'Excelente localização e estrutura. Tivemos uma ótima estadia.',
-      stars: 5,
-      distance: 'A 15 minutos de carro do Transamérica Expo',
-      pricePerNight: 886.0,
-      summary:
-        'Com Wi-Fi grátis e uma localização privilegiada em frente ao Morumbi Shopping, o Blue Tree Premium Morumbi oferece academia, sauna, piscina coberta com deck e piscina ao ar livre com uma área para tomar sol de 20 metros.',
-      text: 'Todos os quartos do Morumbi Blue Tree Premium dispõem de ar-condicionado, cofre, TV a cabo, telefone, frigobar, mesa de trabalho e janelas com isolamento acústico. Além disso, um serviço de quarto está disponível 24 horas. <br>O Noah Jonnie Space, o restaurante do hotel, serve diversas especialidades incluindo refeições leves e típicas de várias regiões. Um café da manhã delicioso também é servido diariamente.<br>O Blue Tree Premium Morumbi fica a 15 minutos de carro do Transamérica Expo Center e a 30 minutos de carro do São Paulo Expo. O Consulado dos EUA fica a 1,4 km.',
-      convenience: {
-        wifi: true,
-        pool: true,
-        parking: false,
-        airConditioning: true,
-        academy: false,
-      },
-      assessments: [
-        {
-          name: 'Gilberto',
-          description: 'Muito bom.',
-          photo: pp1.photo,
-        },
-      ],
-      photo: lc3Photos[2],
-      photos: lc3Photos,
-    },
     {
       id: 'T01',
       type: 2,
@@ -325,13 +299,12 @@ export default () => {
       distance: 'A 4,26 km do centro',
       pricePerNight: 886.0,
       summary:
-        'Com Wi-Fi grátis e uma localização privilegiada em frente ao Morumbi Shopping, o Blue Tree Premium Morumbi oferece academia, sauna, piscina coberta com deck e piscina ao ar livre com uma área para tomar sol de 20 metros.',
-      text: 'Todos os quartos do Morumbi Blue Tree Premium dispõem de ar-condicionado, cofre, TV a cabo, telefone, frigobar, mesa de trabalho e janelas com isolamento acústico. Além disso, um serviço de quarto está disponível 24 horas. <br>O Noah Jonnie Space, o restaurante do hotel, serve diversas especialidades incluindo refeições leves e típicas de várias regiões. Um café da manhã delicioso também é servido diariamente.<br>O Blue Tree Premium Morumbi fica a 15 minutos de carro do Transamérica Expo Center e a 30 minutos de carro do São Paulo Expo. O Consulado dos EUA fica a 1,4 km.',
+        'Do átomo ao maior planeta do sistema solar; do menor inseto aos maiores animais da terra; das leis da física às transformações químicas; do ecossistema à questão da proteção ambiental. Tudo apresentado de forma interativa para fazer da visita uma prazerosa viagem ao conhecimento e à cultura.',
+      text: 'O Museu Catavento, foi inaugurado em março de 2009 com a missão de aproximar crianças, jovens e adultos do mundo científico, despertar a curiosidade e transmitir conhecimentos básicos e valores sociais, por meio de exposições interativas e atraentes, com linguagem simples e acessível.<br><br>Possui 219 instalações, em 12 mil metros quadrados de área expositiva, divididas em quatro grandes seções: Universo, Vida, Engenho e Sociedade. Com exposições com ideias simples ou complexas, como: reproduzir o chão da lua com a pisada do astronauta Neil Armstrong, viajar pelo Brasil na época dos dinossauros; compreender como funciona a eletricidade estática que faz os cabelos ficarem em pé ou fazer uma escalada enquanto conhece grandes personalidades da história.',
       convenience: {
-        wifi: true,
-        pool: true,
+        wifi: false,
+        pool: false,
         parking: false,
-        airConditioning: true,
         academy: false,
       },
       assessments: [
@@ -347,26 +320,82 @@ export default () => {
         title: 'Como chegar',
         data: [
           {
-            title: 'De Van',
+            title: 'Locomoção',
             item: [
               {
-                title: 'Saindo do Largo do Machado ou Praça do Lido (Copacabana)',
+                title: 'De carro',
                 description:
-                  'R$ 117,00 (alta temporada) e R$ 95,00 (baixa temporada).<br>R$ 67,50 para crianças entre 5 e 11 anos. Grátis para crianças até 4 anos.<br>Brasileiros ou estrangeiros residentes a partir de 60 anos: R$ 55,00.<br>O valor inclui a van e acesso ao Cristo.Horário de embarque: Todos os dias, das 8h às 17h.Forma de pagamento: Dinheiro, cartões de débito e crédito (Visa e Mastercard).',
+                  'Planeje sua viagem e venha nos conhecer. Trace rotas de um endereço específico ou use seu celular para calcular uma rota de onde você estiver.',
               },
               {
-                title: 'Saindo de Paineiras',
+                title: 'De ônibus',
                 description:
-                  'Adultos R$ 74,50 (alta temporada) e R$ 52,50 (baixa temporada)<br>Crianças de 5 a 11 anos: R$ 25,00<br>Idosos acima de 60 anos, brasileiros e estrangeiros residentes no Brasil: R$ 12,50<br>Horário de embarque: Todos os dias, das 8h às 18h.',
+                  'O terminal de ônibus Parque Dom Pedro II está a poucos metros do Catavento. Visite o site da SPTrans para descobrir qual ônibus pegar.',
               },
             ],
           },
           {
-            title: 'De Carro, táxi ou Uber',
+            title: 'De metrô',
             item: [
               {
                 description:
-                  'Devido à ausência de estacionamento no Centro de Visitantes, visitar o Cristo Redentor de carro pode não ser uma boa opção, já que será necessário parar o carro na estrada e subir a ladeira a pé por 10 minutos. Ir de táxi ou Uber até o Centro de Visitantes pode ser uma alternativa melhor.<br>Entretanto, se você ainda preferir ir de carro, siga via Cosme Velho pela Ladeira dos Guararapes, subindo a ladeira íngreme. À direita, entre na rua Conselheiro Lampreia até a interseção com a placa indicativa “Corcovado-Mirante”. Vire à esquerda, já na Estrada das Paineiras, e adiante veja mais uma placa indicando “Paineiras-Corcovado”. Os carros de passeio devem seguir somente até às Paineiras. De lá, também é possível seguir de van credenciada até o monumento.',
+                  'Opção 1 - Desembarque: Linha Vermelha - Estação D.Pedro II <br><br> Opção 2 - Desembarque: Linha Azul - São Bento',
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      id: 'T02',
+      type: 2,
+      bookNow: false,
+      title: 'Passeio Noturno Zoológico',
+      stars: 5,
+      distance: 'A 4,26 km do centro',
+      pricePerNight: 886.0,
+      summary:
+        'Nessa experiência inédita, você poderá caminhar pelo Zoo SP por meio de um trajeto único e delimitado para conhecer os animais que possuem hábitos crepusculares ou noturnos',
+      text: 'Como os grandes e pequenos felinos, lobo-guará, corujas, serpentes, entre outros. Esses animais receberão itens especiais de enriquecimento ambiental, uma técnica muito importante e desenvolvida nos zoológicos para estimular comportamentos naturais dos animais. Por isso, os visitantes poderão aguçar seus sentidos para observar as interações dos animais com esses itens, sentir cheiros e ouvir sons da noite do zoo! ',
+      convenience: {
+        wifi: false,
+        pool: false,
+        parking: false,
+        academy: false,
+      },
+      assessments: [
+        {
+          name: 'Gilberto',
+          description: 'Muito bom.',
+          photo: pp1.photo,
+        },
+      ],
+      photo: lc7Photos[2] || lc7f1.photo,
+      photos: lc7Photos,
+      attributes: {
+        title: 'Como chegar',
+        data: [
+          {
+            title: 'Locomoção',
+            item: [
+              {
+                title: 'De carro',
+                description:
+                  'Planeje sua viagem e venha nos conhecer. Trace rotas de um endereço específico ou use seu celular para calcular uma rota de onde você estiver.<br><br>Avenida Miguel Estefno, 4241, Água Funda – São Paulo – SP – CEP 04301-905',
+              },
+              {
+                title: 'Estacionamento',
+                description:
+                  'Em frente à entrada principal do Zoo SP há um estacionamento com capacidade de atender até 2.000 veículos.<br><br> Você pode chegar e estacionar das 8h30 às 16h e retirar seu carro até às 18h.',
+              },
+            ],
+          },
+          {
+            title: 'De ônibus',
+            item: [
+              {
+                description:
+                  '4742-10 Jd. Clímax Metrô São Judas e Saúde <br><br> 475R-10 Jd. São Savério Metrô São Judas e Saúde <br><br> 4491-10 – Zoológico Terminal Parque D. Pedro II ',
               },
             ],
           },
