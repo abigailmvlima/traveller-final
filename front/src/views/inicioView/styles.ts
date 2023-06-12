@@ -29,3 +29,8 @@ export const Cards = styled.div`
   margin-bottom: 50px;
   border-bottom: 1px solid #e3e3e3;
 `;
+
+export const mock = styled.div`
+  display: flex;
+  background-color: aliceblue;
+`;

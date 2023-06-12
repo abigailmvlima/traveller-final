@@ -1,0 +1,55 @@
+loginUser:
+  handler: src/lambda/user.login
+  events:
+    - http:
+        path: /usuario/acesso
+        method: POST
+
+refreshUser:
+  handler: src/lambda/user.refresh
+  events:
+    - http:
+        path: /usuario/acesso
+        method: PUT
+
+findUser:
+  handler: src/lambda/user.find
+  events:
+    - http:
+        path: /usuario
+        method: GET
+
+insertUser:
+  handler: src/lambda/user.insert
+  events:
+    - http:
+        path: /usuario
+        method: POST
+
+updateUser:
+  handler: src/lambda/user.update
+  events:
+    - http:
+        path: /usuario
+        method: PUT
+
+uploadPhotoUser:
+  handler: src/lambda/user.updatePhoto
+  events:
+    - http:
+        path: /usuario/foto
+        method: PUT
+
+removeUser:
+  handler: src/lambda/user.remove
+  events:
+    - http:
+        path: /usuario
+        method: DELETE
+
+findEvent:
+  handler: src/lambda/locations.find
+  events:
+    - http:
+        path: /locations
+        method: GET

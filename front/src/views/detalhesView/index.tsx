@@ -15,7 +15,6 @@ import { TNavigateState } from '../../redux/modules/navigate/types';
 import { TLocation } from '../../types/TLocation';
 import BotaoPadrao from '../../components/formulario/botaoPadrao';
 import { EType } from '../../enum/EType';
-import { Item } from '../../components/menuSuperior/styles';
 
 export default () => {
   const history = useHistory();

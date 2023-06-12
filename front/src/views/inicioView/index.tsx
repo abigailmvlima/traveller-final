@@ -6,12 +6,33 @@ import MenuSuperior from '../../components/menuSuperior';
 import Rodape from '../../components/rodape';
 import TituloPadrao from '../../components/tituloPadrao';
 import * as St from './styles';
-
 import cardsHome from '../../mocks/cardsHome';
 import { TLocation } from '../../types/TLocation';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import actions from '../../redux/actions';
+import { TNavigateState } from '../../redux/modules/navigate/types';
+import { RootState } from '../../redux/store';
+import { TSearchState } from '../../redux/modules/search/types';
 
 export default () => {
-  const listCards: TLocation[] = cardsHome();
+  const dispatch = useDispatch();
+  const searchState: TSearchState = useSelector((s: RootState) => s.search);
+  const [listCards, setListCards] = useState<TLocation[]>([]);
+
+  useEffect(() => {
+    dispatch(
+      actions.search.execute({
+        limit: 3,
+      })
+    );
+  }, []);
+
+  useEffect(() => {
+    if (searchState.loading) return;
+    if (!searchState.loaded) return;
+    setListCards(searchState.response?.data || []);
+  }, [searchState]);
 
   return (
     <ControlePagina>

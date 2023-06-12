@@ -6,7 +6,8 @@ export type TSearchSagasRequest = {
 };
 
 export type TSearchRequest = {
-  type: EType;
+  type?: EType;
+  limit?: number;
   location?: string;
   dateEntry?: string;
   dateDeparture?: string;

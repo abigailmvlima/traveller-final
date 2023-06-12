@@ -1,0 +1,15 @@
+{
+  "name": "startup-greenlight",
+  "version": "0.0.0",
+  "description": "FIAP Startup",
+  "author": "Firebug",
+  "scripts": {
+    "docker": "docker compose -f ./docker_traveller/docker-compose-ambiente.local.yml up -d --force-recreate --build",
+    "api:install": "cd api && yarn && cd .. ",
+    "api:start": "cd api && yarn serverless offline && cd .. ",
+    "web:install": "cd client/greenlight-front && yarn && cd .. ",
+    "web:start": "cd front && yarn start && cd .. ",
+    "ios:install": "cd client/greenlight-app && yarn ios:install && cd .. ",
+    "ios:start": "cd client/greenlight-app && yarn ios:start && cd .. "
+  }
+}
