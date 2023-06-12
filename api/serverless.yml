@@ -1,6 +1,6 @@
-org: elioglima
+org: traveller
 app: aws-node-express-api-app
-service: greenlight
+service: traveller
 provider:
   name: aws
   timeout: 30

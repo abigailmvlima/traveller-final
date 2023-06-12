@@ -1,0 +1,169 @@
+{
+  "info": {
+    "_postman_id": "9d1e75cc-5675-4bba-947b-fb015cc8e1b8",
+    "name": "API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3890866"
+  },
+  "item": [
+    {
+      "name": "Localidades",
+      "item": [
+        {
+          "name": "Consultar",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/locations?limit=3",
+              "host": ["{{server}}"],
+              "path": ["usuario"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Usuarios",
+      "item": [
+        {
+          "name": "Consultar Usuario por Codigo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/usuario?id=59a6f9f6633aab53fa6309f1",
+              "host": ["{{server}}"],
+              "path": ["usuario"],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "59a6f9f6633aab53fa6309f1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Consultar Todos Usuarios",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/usuario",
+              "host": ["{{server}}"],
+              "path": ["usuario"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Atualizar Usuario",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Elio Lima\",\n    \"email\": \"elio.designer@hotmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/usuario?codigo=59a6f9f6633aab53fa6309f1",
+              "host": ["{{server}}"],
+              "path": ["usuario"],
+              "query": [
+                {
+                  "key": "codigo",
+                  "value": "59a6f9f6633aab53fa6309f1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Acesso ao Sistema",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"elio.designer@hotmail.com\",\n    \"senha\": \"Ab@123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/usuario/acesso",
+              "host": ["{{server}}"],
+              "path": ["usuario", "acesso"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Inserir Usuario",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Abigail Lima\",\n    \"email\": \"abigail.lima@hotmail.com\",\n    \"senha\": \"Ab@102030\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/usuario",
+              "host": ["{{server}}"],
+              "path": ["usuario"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Remove Usuario",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/usuario?id=6422e659477c348468f01795",
+              "host": ["{{server}}"],
+              "path": ["usuario"],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "6422e659477c348468f01795"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "server",
+      "value": "http://localhost:3000/dev",
+      "type": "string"
+    }
+  ]
+}
