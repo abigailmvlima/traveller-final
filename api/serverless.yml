@@ -1,5 +1,5 @@
-org: traveller
-app: aws-node-express-api-app
+org: bilima
+app: traveller
 service: traveller
 provider:
   name: aws
