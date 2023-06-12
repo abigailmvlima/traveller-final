@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import CardHome from '../../components/cardHome';
 import ControlePagina from '../../components/controlePagina';
 import FiltroPesquisaCarousel from '../../components/filtroPesquisaCarousel';
@@ -5,15 +8,12 @@ import InfoSeguranca from '../../components/infoSeguranca';
 import MenuSuperior from '../../components/menuSuperior';
 import Rodape from '../../components/rodape';
 import TituloPadrao from '../../components/tituloPadrao';
-import * as St from './styles';
-import cardsHome from '../../mocks/cardsHome';
 import { TLocation } from '../../types/TLocation';
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import actions from '../../redux/actions';
-import { TNavigateState } from '../../redux/modules/navigate/types';
 import { RootState } from '../../redux/store';
 import { TSearchState } from '../../redux/modules/search/types';
+
+import * as St from './styles';
 
 export default () => {
   const dispatch = useDispatch();
